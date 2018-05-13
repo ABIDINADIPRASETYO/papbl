@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="PinjamActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_pinjam"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:background="@color/orange"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editNamaDebitur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_debitur"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editNamaIbu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_ibu"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editNamaAyah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_ayah"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editNoHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_nohp"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editIDLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_line"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editAlamatDebitur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_alamat"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editNamaKerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_kerabat"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editNoHPKerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_nohp_kerabat"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editAlamatKerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_alamat_kerabat"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/pilihUniv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Pilih Universitas"
+            android:inputType="text"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/pilihUniversitas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/hint_universitas"/>
+        <TextView
+            android:id="@+id/pilihTujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Pilih Tujuan"
+            android:inputType="text"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/pilihTujuan1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/hint_tujuan1"/>
+            <RadioButton
+                android:id="@+id/pilihTujuan2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/hint_tujuan2"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/pilihPaket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Pilih Paket Pinjaman"
+            android:inputType="text"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/pilihPaket1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/hint_paket1"/>
+            <RadioButton
+                android:id="@+id/pilihPaket2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/hint_paket2"/>
+            <RadioButton
+                android:id="@+id/pilihPaket3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/hint_paket3"/>
+        </RadioGroup>
+        <EditText
+            android:id="@+id/editNamaRekening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_pemilik_rekening"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_bank"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editNoRekening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/hint_rekening"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/buttonPinjam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/orange"
+            android:text="@string/button_pinjam"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
